@@ -1,0 +1,95 @@
+* {
+  transition: 0.5 ease-out all;
+}
+
+.h1 {
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 36, 51);
+}
+.h1::after {
+  content: "";
+  position: relative;
+  width: 15%;
+  height: 3px;
+  background-color: rgb(39, 36, 51);
+}
+.card {
+  background-color: rgb(197, 197, 197);
+  padding: 20px;
+  text-align: center;
+  width: 95%;
+  margin: 2rem auto;
+}
+/* .header {
+  border: 2px solid;
+} */
+.add-btn {
+  padding: 10px 35px 10px 35px;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid purple;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s ease-out all;
+}
+.add-btn:hover {
+  background-color: rgba(148, 77, 214, 0.546);
+  color: rgb(255, 255, 255);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid; */
+}
+
+.Item-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+
+.Item-2 div {
+  font-size: 1.3em;
+  font-weight: 700;
+  /* border: 3px solid black; */
+  /* margin: 20px; */
+}
+
+.Item-1 {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.date {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.expCard {
+  background-color: rgba(140, 50, 224, 0.692);
+  color: aliceblue;
+}
+
+.cost {
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 10px 20px;
+}
