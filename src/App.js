@@ -1,39 +1,45 @@
-import React from "react";
+import React, { useState }from "react";
 import "./App.css";
 import NewExpenses from "./components/InputExpenses/NewExpenses";
 import Expenses from "./components/Expenses/Expenses";
+const Dummy_Expenses = [
+  {
+    id: "e1",
+    title: "Toilet paper",
+    amount: "\u20B9100",
+    date: new Date(),
+  },
+  {
+    id: "e2",
+    title: "Car Insurance",
+    amount: "\u20B910,0000",
+    date: new Date(),
+  },
+  {
+    id: "e3",
+    title: "Laptop",
+    amount: "\u20B990,000",
+    date: new Date(),
+  },
+  {
+    id: "e4",
+    title: "Tablet",
+    amount: "\u20B940,000",
+    date: new Date(),
+  },
+];
+
 function App() {
-  const expenses = [
-    {
-      id: "e1",
-      item: "Toilet paper",
-      amount: "\u20B9100",
-      date: new Date(),
-    },
-    {
-      id: "e2",
-      item: "Car Insurance",
-      amount: "\u20B910,0000",
-      date: new Date(),
-    },
-    {
-      id: "e3",
-      item: "Laptop",
-      amount: "\u20B990,000",
-      date: new Date(),
-    },
-    {
-      id: "e4",
-      item: "Tablet",
-      amount: "\u20B940,000",
-      date: new Date(),
-    },
-  ];
+  const [expenses, setExpenses] = useState(Dummy_Expenses);
+
+  const addNewExpensesData = (expense) => {
+    setExpenses([expense, ...Dummy_Expenses])
+  };
 
   return (
     <div>
       <div>
-        <NewExpenses></NewExpenses>
+        <NewExpenses onNewExpenses={addNewExpensesData}></NewExpenses>
       </div>
       <div>
         <Expenses expenses={expenses} />

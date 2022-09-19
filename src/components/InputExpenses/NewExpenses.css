@@ -1,7 +1,9 @@
 .new-expenses {
-  max-width: 95%;
-  width: 49rem;
-  margin: 2rem auto;
-  height: 11rem;
-  background-color: rgba(9, 195, 252, 0.74);
+  max-width: 60%;
+  width: 90%;
+  height: 14%;
+  margin: 2% auto;
+  border-radius: 12px;
+  padding: 1% 1% 2% 2%;
+  background-color: rgba(113, 67, 199, 0.534);
 }

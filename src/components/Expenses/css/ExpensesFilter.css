@@ -1,0 +1,28 @@
+.filter {
+  margin: 2% auto;
+  margin-top: 0.7%;
+  margin-bottom: 0.7%;
+  max-width: 95%;
+  width: 100%;
+  /* border: 2px solid white; */
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.filter label {
+  padding: 0.7%;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.filter select {
+  margin: 0.9%;
+  margin-right: 0;
+  padding: 1%;
+  width: 20%;
+  border-radius: 7px;
+  transition: 0.4s ease-out all;
+  outline: none;
+  font-weight: 600;
+  font-size: 15px;
+}

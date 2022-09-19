@@ -1,5 +1,5 @@
 * {
-  transition: 0.5 ease-out all;
+  transition: 0.3 ease-out all;
 }
 
 .h1 {
@@ -24,7 +24,7 @@
   padding: 20px;
   text-align: center;
   width: 95%;
-  margin: 2rem auto;
+  margin: 2% auto;
 }
 /* .header {
   border: 2px solid;
@@ -40,7 +40,7 @@
   transition: 0.5s ease-out all;
 }
 .add-btn:hover {
-  background-color: rgba(148, 77, 214, 0.546);
+  background-color: rgba(191, 122, 255, 0.445);
   color: rgb(255, 255, 255);
 }
 
@@ -60,36 +60,62 @@
 }
 
 .Item-2 div {
-  font-size: 1.3em;
   font-weight: 700;
   /* border: 3px solid black; */
   /* margin: 20px; */
 }
 
 .Item-1 {
-  width: 130px;
+  width: 12%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  border: 2px solid;
-  border-radius: 10px;
-  margin-right: 50px;
-  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  margin-right: 3%;
+  padding: 1%;
+  background-color: rgba(97, 1, 97, 0.884)
 }
 
 .date {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
 }
 
 .expCard {
-  background-color: rgba(140, 50, 224, 0.692);
+  background-color: rgba(150, 113, 219, 0.74);
   color: aliceblue;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .cost {
+  background-color: rgba(93, 2, 121, 0.534);
   border-radius: 10px;
   border: 2px solid;
-  padding: 10px 20px;
+  padding: 10px 30px;
+}
+
+.month {
+  font-size: 1.4em;
+  font-weight: 000;
+}
+
+.day {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.year {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 900;
+  margin: 0;
+  position: relative;
+  left: 10;
+}
+
+.title {
+  font-size: 1.5em;
 }

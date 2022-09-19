@@ -1,5 +1,57 @@
 .form-expenses-controls {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,50%);
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, minmax(10px, auto));
+  gap: 5px;
+  grid-row-end: 3;
   justify-items: baseline;
+  align-items: center;
+}
+.form-expenses-controls .form-expenses-control {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.form-expenses-control input {
+  margin: 1%;
+  width: 77%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  height: 1.9em;
+  font-weight: 500;
+  font-size: large;
+  padding-left: 1.5em;
+}
+.form-btn {
+  width: 95.7%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.7em 1em;
+  outline: none;
+  border-radius: 0.5em;
+  border: 2px solid purple;
+  cursor: pointer;
+  transition: 0.3s ease-out all;
+}
+button:hover {
+  background-color: rgba(90, 0, 90, 0.637);
+  color: aliceblue;
+}
+.form-expenses-control label {
+  margin: 0.3em 0.5em;
+  font-weight: 600;
+  font-size: large;
 }
