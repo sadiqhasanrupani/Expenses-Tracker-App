@@ -4,7 +4,7 @@ import Card from "../UI/Card"
 function ExpensesItem(props) {
   let month = props.date.toLocaleString("en-US", {month: "short"});
   let day = props.date.toLocaleString("en-US",{day: '2-digit'});
-  let year = props.date.getFullYear();
+  let year = props.date.getFullYear().toString();
   return (
     <Card className="card flex expCard">
       <div className="Item-1">
