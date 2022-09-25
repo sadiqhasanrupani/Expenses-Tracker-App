@@ -7,7 +7,7 @@ const Dummy_Expenses = [
     id: "e1",
     title: "Toilet paper",
     amount: "\u20B9100",
-    date: new Date(2020, 20, 1),
+    date: new Date(),
   },
   {
     id: "e2",

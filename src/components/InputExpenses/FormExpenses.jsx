@@ -65,6 +65,11 @@ const FormExpenses = (props) => {
           />
         </div>
         <div className="form-btn">
+          {/* Creating cancel button which type is button bcz if we create the cancel button as it is then it's type by default will submit then it will act as the form button */}
+          <button type="button" onClick={props.onCancel}>
+            Cancel
+          </button>
+          {/* props.onCancel will trigger when we set onCancel (defined attribute) in FormExpenses component. */}
           <button>Add Expenses</button>
         </div>
       </div>

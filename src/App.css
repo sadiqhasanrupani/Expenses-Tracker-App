@@ -1,3 +1,9 @@
+*{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .expenses{
   padding: 1rem;
   margin: 2rem auto;

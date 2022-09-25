@@ -8,7 +8,7 @@ function Expenses(props) {
   const [filteredChange, updateFilter] = useState("2020");
 
   const filterChangeFilter = (filterValue) => {
-    console.log("From Expenses Filter");
+    // console.log("From Expenses Filter");
     updateFilter(filterValue);
   };
 
