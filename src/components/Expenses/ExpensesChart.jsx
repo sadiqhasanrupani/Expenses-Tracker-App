@@ -6,7 +6,7 @@ import Chart from "../Chart/Chart";
 const ExpensesChart = (props) => {
   // here we need datapoint which will go to chart component viva props.
   const chartDataPoint = [
-    { label: "Jan", value: 0 }, // for now the value will set to 0 for now.
+    { label: "Jan", value: 0 },
     { label: "Feb", value: 0 },
     { label: "Mar", value: 0 },
     { label: "Apr", value: 0 },
@@ -23,9 +23,12 @@ const ExpensesChart = (props) => {
   // ^ here all year's are label and also the key which is unique alright.
   /* Let get the expenses from the Expenses.jsx viva props. */
 
-  for (expItem of props.expItems) {
+  for (const expItem of props.expItems) {
     // grab expenses month from expenses object's date key.
-    const expMonth = expItem.getMonth(); // this month will get the index of the month.
+    // console.log(expItem.date.getMonth())
+    const expMonth = expItem.date.getMonth();
+
+    // this month will get the index of the month.
     // let say the month is january then "getMonth()" will return => 0
     // if feb then => 1.
 
@@ -37,7 +40,8 @@ const ExpensesChart = (props) => {
     // chartDataPoint[expMonth].value = chartDataPoint[expMonth].value + expItem.amount;
     // OR easy way
 
-    chartDataPoint[expMonth].value += expItem.amount;
+    (chartDataPoint[expMonth].value += Number(expItem.amount));
+    // console.log(typeof(val));
   }
 
   return (

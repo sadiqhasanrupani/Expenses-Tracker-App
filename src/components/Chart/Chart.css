@@ -1,5 +1,8 @@
 .chart {
-  padding: 1rem;
+  padding: 2%;
+  max-width: 95%;
+  width: 91%;
+  margin: 3% auto;
   border-radius: 12px;
   background-color: #f8dfff;
   text-align: center;

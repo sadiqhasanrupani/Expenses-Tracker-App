@@ -29,12 +29,14 @@
 }
 .form-btn {
   width: 95.7%;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  margin: 0.6%;
+  /* border: 3px solid; */
+  grid-column: 3/1;
   display: flex;
   justify-content: flex-end;
+}
+.form-btn button {
+  margin: 0.8%;
 }
 button {
   font-weight: 600;

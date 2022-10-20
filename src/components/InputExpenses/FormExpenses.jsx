@@ -21,7 +21,7 @@ const FormExpenses = (props) => {
 
     const expensesData = {
       title: enteredTitle,
-      amount: `\u20B9${enteredAmount}`,
+      amount: enteredAmount,
       date: new Date(enteredDate),
     };
 

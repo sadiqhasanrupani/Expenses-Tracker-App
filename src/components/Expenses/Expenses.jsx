@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
+// importing expenseChart from the expense folder
+import ExpensesChart from "./ExpensesChart";
 import "./css/Expenses.css";
 
 function Expenses(props) {
@@ -26,6 +28,8 @@ function Expenses(props) {
         selectedValue={filteredChange}
         onChangeFilter={filterChangeFilter}
       />
+      {/* Embadding the ExpensesChart inside this card */}
+      <ExpensesChart expItems={filteredExpenses} />
       <ExpensesList item={filteredExpenses}/>
     </Card>
   );
