@@ -9,4 +9,17 @@
   display: flex;
   justify-content: space-around;
   height: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media (max-width: 768px) {
+  .chart {
+    flex-direction: column;
+    height: 25rem;
+  }
+}
+@media (min-width: 1460px) and (max-width: 1960px) {
+  .chart {
+    justify-content: space-around;
+  }
 }

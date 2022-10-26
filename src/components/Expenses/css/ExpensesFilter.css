@@ -21,8 +21,16 @@
   padding: 1%;
   width: 20%;
   border-radius: 7px;
-  transition: 0.4s ease-out all;
   outline: none;
   font-weight: 600;
   font-size: 15px;
+  transition: 0.4s ease-out all;
+}
+
+@media (max-width: 786px) {
+  .filter select {
+    width: 22%;
+    padding: 2%;
+    /* margin: auto; */
+  }
 }

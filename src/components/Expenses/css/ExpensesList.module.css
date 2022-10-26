@@ -1,0 +1,10 @@
+.h2 {
+  color: white;
+  padding: 2%;
+  margin: 2% auto;
+}
+@media (max-width: 786px) {
+  .h2 {
+    font-size: large;
+  }
+}

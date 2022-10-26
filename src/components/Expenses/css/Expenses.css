@@ -5,3 +5,8 @@
   width: 63%;
   background-color: rgba(54, 54, 54,0.9);
 }
+@media (max-width: 786px) {
+  .expenses {
+    width: 95%;
+  }
+}

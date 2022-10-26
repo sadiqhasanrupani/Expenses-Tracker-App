@@ -1,11 +1,13 @@
 import React from "react";
 import ExpensesItem from "./ExpensesItem";
+import styles from "./css/ExpensesList.module.css";
+
 const ExpensesList = (props) => {
 
-  let msg = <h2>No Expenses Found.</h2>;
+  let msg = <h2 className={styles.h2}>No Expenses Found.</h2>;
 
   if(props.item.length === 0) {
-    return msg
+    return msg;
   }
   
   return (

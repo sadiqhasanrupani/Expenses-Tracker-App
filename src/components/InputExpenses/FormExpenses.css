@@ -10,12 +10,14 @@
   justify-items: baseline;
   align-items: center;
 }
+
 .form-expenses-controls .form-expenses-control {
   width: 95%;
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
+
 .form-expenses-control input {
   margin: 1%;
   width: 77%;
@@ -27,6 +29,7 @@
   font-size: large;
   padding-left: 1.5em;
 }
+
 .form-btn {
   width: 95.7%;
   margin: 0.6%;
@@ -35,9 +38,11 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .form-btn button {
   margin: 0.8%;
 }
+
 button {
   font-weight: 600;
   font-size: 15px;
@@ -48,12 +53,25 @@ button {
   cursor: pointer;
   transition: 0.3s ease-out all;
 }
+
 button:hover {
   background-color: rgba(90, 0, 90, 0.637);
   color: aliceblue;
 }
+
 .form-expenses-control label {
   margin: 0.3em 0.5em;
   font-weight: 600;
   font-size: large;
+}
+
+@media (max-width: 786px) {
+  button {
+    width: 100%;
+  }
+
+  .form-btn {
+    padding-top: 2%;
+    justify-content: flex-start;
+  }
 }

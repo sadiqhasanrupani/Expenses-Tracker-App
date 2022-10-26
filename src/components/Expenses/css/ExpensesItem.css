@@ -12,6 +12,7 @@
   align-items: center;
   color: rgb(39, 36, 51);
 }
+
 .h1::after {
   content: "";
   position: relative;
@@ -19,6 +20,7 @@
   height: 3px;
   background-color: rgb(39, 36, 51);
 }
+
 .card {
   background-color: rgb(197, 197, 197);
   padding: 20px;
@@ -26,6 +28,7 @@
   width: 95%;
   margin: 2% auto;
 }
+
 /* .header {
   border: 2px solid;
 } */
@@ -39,6 +42,7 @@
   font-weight: 600;
   transition: 0.5s ease-out all;
 }
+
 .add-btn:hover {
   background-color: rgba(191, 122, 255, 0.445);
   color: rgb(255, 255, 255);
@@ -84,10 +88,9 @@
 }
 
 .expCard {
+  display: flex;
   background-color: rgba(150, 113, 219, 0.74);
   color: aliceblue;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
 .cost {
@@ -118,4 +121,34 @@
 
 .title {
   font-size: 1.5em;
+}
+
+@media (max-width: 786px) {
+  .Item-1 {
+    height: 4.3rem;
+    width: 6rem;
+    margin-right: 5%;
+  }
+
+  .expCard {
+    font-size: small;
+    justify-content: space-between;
+  }
+  /* .expCard .Item-1 {
+    display: none;
+  } */
+  .Item-2 {
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    text-align: left;
+  }
+  .cost {
+    text-align: center;
+  }
+  .cost-div {
+    margin-top: 10%;
+    grid-column: 2/1;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

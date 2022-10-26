@@ -1,13 +1,26 @@
 .new-expenses {
   text-align: center;
-  max-width: 60%;
-  width: 90%;
+  max-width: 95%;
+  width: 60%;
   margin: 2% auto;
   border-radius: 12px;
   padding: 1%;
   background-color: rgba(113, 67, 199, 0.534);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .add-btn-exp {
   margin: 1% auto;
+}
+
+@media (max-width: 786px) {
+  .new-expenses {
+    width: 93%;
+  }
+}
+
+@media (min-width: 1460px) and (max-width: 1960px) {
+  .new-expenses {
+    width: 61%;
+  }
 }

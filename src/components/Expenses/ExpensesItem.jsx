@@ -15,7 +15,9 @@ function ExpensesItem(props) {
         </div>
         <div className="Item-2">
           <div className="title">{props.title}</div>
-          <div className="cost">{"\u20B9"+props.amount}</div>
+          <div className={'cost-div'}>
+            <div className="cost">{"\u20B9" + props.amount}</div>
+          </div>
         </div>
       </Card>
     </li>
